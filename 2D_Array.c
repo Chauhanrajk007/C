@@ -25,7 +25,7 @@ int main()
     }
     }
     if(b==0)
-    printf("The given array is a Null Matrix");
+    printf("The given array is a Nul Matrix");
     else
      printf("The given array is a not Null Matrix");
 
