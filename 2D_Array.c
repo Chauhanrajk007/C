@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int b=0,n,m;
+    int n,m;
     printf("Enter the number of rows and columns: ");
     scanf("%d",&n);
     scanf("%d",&m);
     int a[n][m];
-    printf("Enter Array elements: ");
+    int b[n][m];
+    int c[n][m];
+    printf("Enter Array elements of 1st Array: ");
     for(int i=0;i<n;i++)
     {
      for(int j=0;j<m;j++)
@@ -14,19 +16,29 @@ int main()
           scanf("%d",&a[i][j]);
     }
     }
+    printf("Enter Array elements of 2nd Array: ");
+    for(int i=0;i<n;i++)
+    {
+     for(int j=0;j<m;j++)
+    {
+          scanf("%d",&b[i][j]);
+    }
+    }
      for(int i=0;i<n;i++)
     {
      for(int j=0;j<m;j++)
     {
-             if(0!=a[i][j])  
-             {
-                  b++;
-             }                                                                                                                                                    
+            c[n][m]=a[n][m]+b[n][m];                                                                                                                                                   
     }
     }
-    if(b==0)
-    printf("The given array is a Nul Matrix");
-    else
-     printf("The given array is a not Null Matrix");
-
+    printf("Enter Array elements of 2nd Array: ");
+    for(int i=0;i<n;i++)
+    {
+     for(int j=0;j<m;j++)
+    {
+          printf("%d    ",c[i][j]);
+    }
+    printf("\n");
+    }
+   
 }
